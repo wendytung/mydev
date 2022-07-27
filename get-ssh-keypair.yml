@@ -13,7 +13,7 @@
       debug:
         msg: "{{filename.stdout}}"
     - name: get content of private key
-      command: cat /tmp/mykey |base64 -w0
+      command: cat /tmp/mykey
       register: filename2
       become: true 
     - name: Show private key
